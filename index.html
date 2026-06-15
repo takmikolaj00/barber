@@ -3,272 +3,319 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Royal Barber - profesjonalny barbershop. Strzyżenie męskie, pielęgnacja brody, stylizacja. Umów wizytę online." />
-  <title>Royal Barber — Profesjonalne strzyżenie męskie</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <title>Pizza House Chęciny — Najlepsza pizza w Chęcinach | Zamów online</title>
+  <meta name="description" content="Pizza House Chęciny — rodzinna pizzeria w Chęcinach. Świeże składniki, duże porcje, szybka dostawa. Ponad 1700 pozytywnych opinii. Zadzwoń: 515 778 088." />
+  <meta name="keywords" content="pizza Chęciny, pizzeria Chęciny, pizza na wynos Chęciny, dostawa pizzy Chęciny, Pizza House Chęciny" />
+  <meta name="author" content="Pizza House Chęciny" />
+  <meta property="og:title" content="Pizza House Chęciny — Najlepsza pizza w Chęcinach" />
+  <meta property="og:description" content="Rodzinna pizzeria w Chęcinach. Świeże składniki, duże porcje, szybka dostawa. Ocena 4,6/5 (1720 opinii)." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="pl_PL" />
+  <link rel="canonical" href="/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pizza House Chęciny",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Armii Krajowej 16",
+      "postalCode": "26-060",
+      "addressLocality": "Chęciny",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48515778088",
+    "servesCuisine": "Pizza, Włoska",
+    "priceRange": "20-40 zł",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "1720"
+    },
+    "openingHours": "Mo-Su 11:00-22:00"
+  }
+  </script>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#home" class="logo">
-        <span class="logo-mark">✂</span>
-        <span class="logo-text">Royal<span>Barber</span></span>
+    <div class="container nav-wrap">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">🍕</span>
+        <span class="logo-text">Pizza House <em>Chęciny</em></span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a href="tel:+48515778088" class="btn btn-primary nav-cta">📞 Zamów telefonicznie</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav-links" id="navLinks">
-        <a href="#home">Strona główna</a>
-        <a href="#about">O nas</a>
-        <a href="#services">Usługi</a>
-        <a href="#gallery">Galeria</a>
-        <a href="#reviews">Opinie</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="home">
+  <section class="hero" id="hero">
     <div class="hero-overlay"></div>
-    <div class="container hero-content reveal">
-      <p class="eyebrow">— Premium Barbershop —</p>
-      <h1>Profesjonalne<br/><span class="gold">strzyżenie męskie</span></h1>
-      <p class="hero-sub">Sztuka barberingu w klasycznym wydaniu. Precyzja, styl i niepowtarzalny klimat dla prawdziwego dżentelmena.</p>
-      <a href="#contact" class="btn btn-primary">Umów wizytę</a>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Pizzeria w Chęcinach od lat</p>
+      <h1>Najlepsza pizza<br/>w <span class="accent">Chęcinach</span></h1>
+      <p class="hero-sub">Ponad 1700 pozytywnych opinii · Ocena 4,6 ⭐</p>
+      <div class="hero-ctas">
+        <a href="tel:+48515778088" class="btn btn-primary btn-lg">📞 Zadzwoń i zamów</a>
+        <a href="#menu" class="btn btn-ghost btn-lg">Zobacz menu</a>
+      </div>
+      <div class="service-pills">
+        <span>🍽️ Na miejscu</span>
+        <span>🥡 Na wynos</span>
+        <span>🛵 Dostawa</span>
+      </div>
     </div>
-    <a href="#about" class="scroll-down" aria-label="Przewiń"></a>
   </section>
 
   <!-- O NAS -->
-  <section class="section" id="about">
+  <section class="section" id="o-nas">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">— O nas —</p>
-        <h2>Tradycja spotyka <span class="gold">nowoczesność</span></h2>
-        <p class="lead">Jesteśmy zespołem pasjonatów, dla których barbering to coś więcej niż zawód. Tworzymy miejsce, w którym każdy mężczyzna poczuje się wyjątkowo — od pierwszego cięcia po ostatni detal.</p>
+        <span class="kicker">O nas</span>
+        <h2>Rodzinna pizzeria z sercem</h2>
+        <p class="lead">W Pizza House Chęciny od lat wypiekamy pizzę na chrupiącym cieście, z świeżych, lokalnych składników. Duże porcje, prawdziwy włoski smak i ciepła, rodzinna atmosfera — to nasz znak rozpoznawczy.</p>
       </div>
-
       <div class="features">
         <div class="feature reveal">
-          <div class="feature-icon">★</div>
-          <h3>Doświadczenie</h3>
-          <p>Ponad 10 lat praktyki i tysiące zadowolonych klientów, którzy wracają do nas regularnie.</p>
+          <div class="feature-icon">🌿</div>
+          <h3>Świeże składniki</h3>
+          <p>Codziennie wybierane warzywa, prawdziwa mozzarella i własny sos pomidorowy.</p>
         </div>
         <div class="feature reveal">
-          <div class="feature-icon">♛</div>
-          <h3>Profesjonalizm</h3>
-          <p>Każda wizyta to indywidualne podejście, dbałość o szczegół i pełen komfort obsługi.</p>
+          <div class="feature-icon">🛵</div>
+          <h3>Szybka dostawa</h3>
+          <p>Dowozimy pizzę gorącą prosto pod Twoje drzwi w Chęcinach i okolicy.</p>
         </div>
         <div class="feature reveal">
-          <div class="feature-icon">✂</div>
-          <h3>Najlepszy sprzęt</h3>
-          <p>Pracujemy wyłącznie na sprawdzonych narzędziach i kosmetykach renomowanych marek.</p>
+          <div class="feature-icon">🍕</div>
+          <h3>Duże porcje</h3>
+          <p>Solidne, sycące pizze — wracają do nas całe rodziny i grupy znajomych.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- USŁUGI -->
-  <section class="section section-dark" id="services">
+  <!-- MENU -->
+  <section class="section section-alt" id="menu">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">— Cennik —</p>
-        <h2>Nasze <span class="gold">usługi</span></h2>
-        <p class="lead">Kompleksowa oferta dla wymagających klientów. Wybierz to, co najlepsze dla siebie.</p>
+        <span class="kicker">Menu</span>
+        <h2>Nasze najpopularniejsze pizze</h2>
+        <p class="lead">Klasyki, które kochają mieszkańcy Chęcin. Ceny od 20 do 40 zł.</p>
       </div>
 
-      <div class="services">
-        <div class="service-card reveal">
-          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Strzyżenie" />
-          <div class="service-body">
-            <h3>Strzyżenie</h3>
-            <p>Klasyczne lub nowoczesne cięcie dopasowane do typu twarzy.</p>
-            <span class="price">80 zł</span>
+      <div class="menu-grid">
+        <article class="pizza-card reveal">
+          <div class="pizza-img" style="background-image:url('https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=800&q=80')"></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Margherita</h3><span class="price">od 22 zł</span></div>
+            <p>Sos pomidorowy, mozzarella, świeża bazylia, oliwa z oliwek.</p>
           </div>
-        </div>
-        <div class="service-card reveal">
-          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Broda" />
-          <div class="service-body">
-            <h3>Broda</h3>
-            <p>Modelowanie i pielęgnacja brody ciepłym ręcznikiem.</p>
-            <span class="price">60 zł</span>
-          </div>
-        </div>
-        <div class="service-card reveal">
-          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Combo" />
-          <div class="service-body">
-            <h3>Combo</h3>
-            <p>Strzyżenie + broda — pełny pakiet w jednej wizycie.</p>
-            <span class="price">120 zł</span>
-          </div>
-        </div>
-        <div class="service-card reveal">
-          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Stylizacja" />
-          <div class="service-body">
-            <h3>Stylizacja</h3>
-            <p>Mycie, stylizacja oraz dobór odpowiednich kosmetyków.</p>
-            <span class="price">50 zł</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </article>
 
-  <!-- GALERIA -->
-  <section class="section" id="gallery">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">— Galeria —</p>
-        <h2>Nasze <span class="gold">realizacje</span></h2>
-        <p class="lead">Zobacz efekty naszej pracy — precyzja w każdym detalu.</p>
+        <article class="pizza-card reveal">
+          <div class="pizza-img" style="background-image:url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80')"></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Capricciosa</h3><span class="price">od 30 zł</span></div>
+            <p>Sos pomidorowy, mozzarella, szynka, pieczarki, oliwki.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card reveal">
+          <div class="pizza-img" style="background-image:url('https://images.unsplash.com/photo-1628840042765-356cda07504e?w=800&q=80')"></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Salami</h3><span class="price">od 28 zł</span></div>
+            <p>Sos pomidorowy, mozzarella, pikantne salami, oregano.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card reveal">
+          <div class="pizza-img" style="background-image:url('https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=800&q=80')"></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Góralska</h3><span class="price">od 32 zł</span></div>
+            <p>Sos pomidorowy, mozzarella, oscypek, boczek, żurawina.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card reveal">
+          <div class="pizza-img" style="background-image:url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80')"></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Carbonara</h3><span class="price">od 34 zł</span></div>
+            <p>Śmietana, mozzarella, boczek, cebula, parmezan, jajko.</p>
+          </div>
+        </article>
+
+        <article class="pizza-card reveal">
+          <div class="pizza-img" style="background-image:url('https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800&q=80')"></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Rukola</h3><span class="price">od 36 zł</span></div>
+            <p>Sos pomidorowy, mozzarella, prosciutto, rukola, parmezan, pomidorki.</p>
+          </div>
+        </article>
       </div>
 
-      <div class="gallery">
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Galeria 1" /></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80" alt="Galeria 2" /></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=800&q=80" alt="Galeria 3" /></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=800&q=80" alt="Galeria 4" /></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Galeria 5" /></div>
-        <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1593702288056-f173a1b6ec80?auto=format&fit=crop&w=800&q=80" alt="Galeria 6" /></div>
+      <div class="menu-cta reveal">
+        <a href="tel:+48515778088" class="btn btn-primary btn-lg">📞 Zamów: 515 778 088</a>
       </div>
     </div>
   </section>
 
   <!-- OPINIE -->
-  <section class="section section-dark" id="reviews">
+  <section class="section" id="opinie">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">— Opinie —</p>
-        <h2>Co mówią <span class="gold">klienci</span></h2>
+        <span class="kicker">Opinie</span>
+        <h2>Co mówią nasi goście</h2>
+        <p class="lead"><strong>4,6 ⭐</strong> na podstawie <strong>1720</strong> opinii w Google</p>
       </div>
 
       <div class="reviews">
-        <div class="review reveal">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>„Najlepszy barber w mieście. Profesjonalna obsługa, świetna atmosfera i efekt zawsze idealny. Polecam każdemu!”</p>
-          <div class="review-author">— Michał K.</div>
-        </div>
-        <div class="review reveal">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>„Wreszcie miejsce, gdzie czuję się jak dżentelmen. Precyzyjne cięcie i super pielęgnacja brody. 10/10.”</p>
-          <div class="review-author">— Tomasz W.</div>
-        </div>
-        <div class="review reveal">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>„Klimat, muzyka, kawa i mistrzowska robota. Wracam regularnie od pół roku i nie zamieniłbym na żaden inny.”</p>
-          <div class="review-author">— Krzysztof B.</div>
-        </div>
+        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Najlepsza pizza w okolicy! Ciasto idealnie chrupiące, składniki świeże, a porcje naprawdę duże. Wracamy z całą rodziną co tydzień.”</p>
+          <footer>— Anna K., Chęciny</footer>
+        </blockquote>
+
+        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Zamawiamy regularnie z dostawą — pizza zawsze gorąca, dowóz szybki, a obsługa miła. Polecam Góralską, rewelacja!”</p>
+          <footer>— Marcin P., Chęciny</footer>
+        </blockquote>
+
+        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Miła atmosfera, świetne ceny i prawdziwy włoski smak. Najlepsza pizzeria w Chęcinach — można usiąść na miejscu albo wziąć na wynos.”</p>
+          <footer>— Katarzyna W., Kielce</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section section-alt" id="galeria">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Galeria</span>
+        <h2>Zobacz nasze pizze i wnętrze</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1542528180-a1208c5169a5?w=900&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1559054663-e8d23213f55c?w=900&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1579751626657-72bc17010498?w=900&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80')"></div>
+        <div class="gallery-item reveal" style="background-image:url('https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=900&q=80')"></div>
       </div>
     </div>
   </section>
 
   <!-- KONTAKT -->
-  <section class="section" id="contact">
+  <section class="section" id="kontakt">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">— Kontakt —</p>
-        <h2>Umów <span class="gold">wizytę</span></h2>
-        <p class="lead">Zadzwoń, napisz lub odwiedź nas osobiście. Czekamy na Ciebie!</p>
+        <span class="kicker">Kontakt</span>
+        <h2>Odwiedź nas lub zadzwoń</h2>
       </div>
 
       <div class="contact-grid">
         <div class="contact-info reveal">
-          <div class="info-item">
-            <strong>Adres</strong>
-            <p>ul. Marszałkowska 100<br/>00-001 Warszawa</p>
+          <div class="info-block">
+            <h3>📍 Adres</h3>
+            <p>Armii Krajowej 16<br/>26-060 Chęciny</p>
           </div>
-          <div class="info-item">
-            <strong>Telefon</strong>
-            <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+          <div class="info-block">
+            <h3>📞 Telefon</h3>
+            <p><a href="tel:+48515778088">515 778 088</a></p>
           </div>
-          <div class="info-item">
-            <strong>Email</strong>
-            <p><a href="mailto:kontakt@royalbarber.pl">kontakt@royalbarber.pl</a></p>
+          <div class="info-block">
+            <h3>🕐 Godziny otwarcia</h3>
+            <p>Codziennie do <strong>22:00</strong></p>
           </div>
-          <div class="info-item">
-            <strong>Godziny otwarcia</strong>
-            <p>Pn–Pt: 10:00 – 20:00<br/>Sob: 9:00 – 16:00</p>
+          <div class="contact-ctas">
+            <a href="tel:+48515778088" class="btn btn-primary">📞 Zadzwoń</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Armii+Krajowej+16,+26-060+Chęciny" target="_blank" rel="noopener" class="btn btn-ghost">🧭 Wyznacz trasę</a>
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contactForm">
-          <input type="text" name="name" placeholder="Imię i nazwisko" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <input type="tel" name="phone" placeholder="Telefon" />
-          <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
-          <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
-          <p class="form-status" id="formStatus"></p>
-        </form>
-      </div>
-
-      <div class="map reveal">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.5!2d21.0122!3d52.2297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDEzJzQ2LjkiTiAyMcKwMDAnNDQuMCJF!5e0!3m2!1spl!2spl!4v1700000000000"
-          width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="Mapa"></iframe>
+        <div class="map reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Armii+Krajowej+16,+26-060+Chęciny&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa Pizza House Chęciny"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- STOPKA -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="logo">
-        <span class="logo-mark">✂</span>
-        <span class="logo-text">Royal<span>Barber</span></span>
+    <div class="container footer-wrap">
+      <div>
+        <div class="logo logo-light">
+          <span class="logo-icon">🍕</span>
+          <span class="logo-text">Pizza House <em>Chęciny</em></span>
+        </div>
+        <p class="footer-tag">Najlepsza pizza w Chęcinach od lat.</p>
       </div>
-      <div class="socials">
-        <a href="#" aria-label="Facebook">📘</a>
-        <a href="#" aria-label="Instagram">📸</a>
-        <a href="#" aria-label="TikTok">🎵</a>
-        <a href="#" aria-label="YouTube">▶️</a>
+      <div>
+        <h4>Kontakt</h4>
+        <p>Armii Krajowej 16, 26-060 Chęciny</p>
+        <p><a href="tel:+48515778088">515 778 088</a></p>
       </div>
-      <p class="copy">© 2026 Royal Barber. Wszelkie prawa zastrzeżone.</p>
+      <div>
+        <h4>Znajdź nas</h4>
+        <a class="social" href="https://pl-pl.facebook.com" target="_blank" rel="noopener">📘 Facebook</a>
+      </div>
     </div>
+    <div class="copyright">© 2026 Pizza House Chęciny · Wszelkie prawa zastrzeżone</div>
   </footer>
 
   <script>
     // Mobile menu
-    const toggle = document.getElementById('navToggle');
-    const links = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
-      toggle.classList.toggle('active');
+    const burger = document.getElementById('hamburger');
+    const nav = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      burger.classList.toggle('active');
     });
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      links.classList.remove('open');
-      toggle.classList.remove('active');
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      burger.classList.remove('active');
     }));
 
-    // Navbar scrolled state
+    // Sticky shadow
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
     });
 
+    // Reveal on scroll
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
-          e.target.classList.add('visible');
+          e.target.classList.add('in');
           io.unobserve(e.target);
         }
       });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('formStatus');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      status.textContent = 'Dziękujemy! Skontaktujemy się wkrótce.';
-      status.style.color = '#d4af37';
-      form.reset();
-    });
   </script>
 </body>
 </html>
